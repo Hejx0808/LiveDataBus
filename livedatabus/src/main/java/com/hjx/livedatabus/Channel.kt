@@ -76,6 +76,6 @@ open class Channel<T> constructor(type: Class<T>) {
         }, delay)
     }
 
-    fun isMainThread() =
+    internal fun isMainThread() =
         Looper.myLooper() == Looper.getMainLooper()
 }
